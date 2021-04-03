@@ -1,2 +1,2 @@
-project_name,path_video_file,fps,video_start,path_FERDA_output,number_of_parts,size_of_parts,msd_threshold,single_threshold,arena_diameter_mm,path_behavioral_timeseries,
-"sampleC5T1","../sample_data/input_video/C5T1_clip3000frames.ogv",15,500,"../sample_data/output_ferda_trajectories/",3,10,1.3,1.8,90,"./sample_data/output_behaviour_timeseries"
+project_name,path_video_file,fps,video_start,path_FERDA_output,number_of_parts,size_of_parts,msd_threshold,single_threshold,speedThreshold,arena_diameter_mm,path_behavioral_timeseries,ants_counted
+sampleC5T1,../sample_data/input_video/C5T1_clip3000frames.ogv,15,500,../sample_data/output_ferda_trajectories/,3,10,1.3,1.8,5,90,../sample_data/output_behaviour_timeseries,14
