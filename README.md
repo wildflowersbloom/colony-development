@@ -1,6 +1,6 @@
 # colony development
 ## Overview
-![alt text](https://github.com/wildflowers/colony-development/main/overview.png?raw=true)
+![Repository diagram](overview.png)
 
 ## Expected input
 ### Conriguration file. (config.csv)
