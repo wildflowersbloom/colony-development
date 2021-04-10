@@ -1,6 +1,15 @@
 # colony development
+## Overview
+![alt text](https://github.com/wildflowers/colony-development/main/overview.png?raw=true)
 
-## Running
+## Expected input
+### Conriguration file. (config.csv)
+### Hardcoded parameters (line) number of ants per segmentation area, thresholds
+## Output
+## Notes to parallelize
+
+
+
 
 ### Prerequisites
 1. matlab 2015 or later. If you are running in gnu/linux, make sure to use your local version of gclib, by starting matlab like this:
@@ -11,3 +20,6 @@
 ### Running
 
 Use the script `main.m` in the `behavioral_var_compilation/` folder
+
+
+
