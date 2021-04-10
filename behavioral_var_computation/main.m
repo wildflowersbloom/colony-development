@@ -1,9 +1,10 @@
 close all
 clear
-params_all_experiments = table2struct(readtable('config.csv'));
-workingdir='../sample_data/working_directory/';
+datadir='../sample_data/';
+params_all_experiments = table2struct(readtable(strcat(datadir,'config.csv')));
+workingdir=strcat(datadir,'working_directory/');
 resume=1; % use resume=0 to start over, resume=1 to continue where you left off            
-mkdir('../sample_data','working_directory');
+mkdir(datadir,'working_directory');
 
 n_exp = 1;  % row in the csv file, could replace with for loop
 params = params_all_experiments(n_exp);
@@ -11,9 +12,10 @@ projpath = strcat(workingdir,params.project_name,'/');
 
 % copy ferda output files to working directory and update output path
 mkdir(workingdir, params.project_name);
-copyfile(strcat(params.path_FERDA_output,'*'), projpath);
+copyfile(strcat(datadir,params.path_FERDA_output,'*'), projpath);
 params.path_FERDA_output = projpath;
-
+params.path_video_file=strcat(datadir,params.path_video_file);
+params.path_behavioral_timeseries=strcat(datadir,params.path_behavioral_timeseries);
 % create memory-map object
 trx = createTracksObject(params.path_FERDA_output, ...
                    params.number_of_parts, ...
