@@ -20,6 +20,7 @@ The scripts first convert the format of the trajectories into a memory-mapped fi
 See the publication linked to this repository, which connects the computed colony behavior proxies with colony composition, and both to colony overwintering survival. Below, the whole process and the format of the input and output files is described in detail, so that the user can adapt the output of any tracking software to produce behavior-relevant time series.
 
 ![Repository diagram](overview.png)
+
 The data flow diagram summarizes the sequence of execution of the main scripts (in orange), the files they exchange (in shades of blue) and the user input (in green). A sample video, the corresponding trajectory files, and a configuration file are provided in the repository folder `sample_data`, to run with scripts in `behavioral_var_computation`.  
 
 ## Prerequisites
